@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f6fb;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-menu li {
+    font-size: 16px;
+    color: #3b3b3b;
+    cursor: pointer;
+}
+
+.cart-icon {
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* banner section */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+}
+
+.banner-text {
+    max-width: 50%;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.orange {
+    color: #eb6200;
+    font-weight: 700;
+}
+
+.black {
+    color: #000;
+    font-weight: 700;
+}
+
+.banner-text p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
