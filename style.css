@@ -79,3 +79,83 @@ body {
     height: auto;
     max-height: 400px;
 }
+
+
+/* Plants Section */
+.plants-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f3f6fb;
+}
+
+.plants-title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.plants-title .highlight {
+    color: #eb6200;
+}
+
+.plants-title p {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+
+.plant-card {
+    background-color: #f3f6fb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 0px;
+    transition: transform 0.3s;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+}
+
+.plant-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.plant-card h3 {
+    margin: 2 0 2px 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.plant-card .price {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+
+}
+
+.plant-card button {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #eb6200;
+    border: none;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plant-card button:hover {
+    background-color: #c95000;
+}
