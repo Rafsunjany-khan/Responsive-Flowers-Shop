@@ -159,3 +159,83 @@ body {
 .plant-card button:hover {
     background-color: #c95000;
 }
+
+/* Footer Section */
+.site-footer {
+  background-color: #f3f6fb;
+  color: #111;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+}
+.list-column {
+  flex: 0 0 140px;
+  max-width: 140px;
+}
+
+.logo-column {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  max-height: 70px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-heading {
+  font-size: 22px;
+  font-weight: 200;
+  color: #666;
+  margin-top: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 22px;
+  font-size: 18px;
+  color: #666;
+
+}
+
+.footer-social {
+  display: flex;
+  gap: 22px;
+  margin-top: 10px;
+}
+
+.icon-wrap {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+}
