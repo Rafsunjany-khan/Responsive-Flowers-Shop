@@ -211,6 +211,36 @@ body {
 .plant-card button:hover {
     background-color: #c95000;
 }
+/* Mobile Response Plants Section */
+@media (max-width: 768px) {
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plants-title h2 {
+    font-size: 30px;
+  }
+
+  .plants-title p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .plant-card h3 {
+    font-size: 16px;
+  }
+
+  .plant-card .price {
+    font-size: 16px;
+  }
+
+  .plant-card button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
 
 /* Flower and Plants lover */
 .intro-section {
