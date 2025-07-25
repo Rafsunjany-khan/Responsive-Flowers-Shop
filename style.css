@@ -57,7 +57,7 @@ body {
     height: 50px;
   }
 }
-
+/* End of Navbar Section */
 
 /* banner section */
 .banner {
@@ -131,7 +131,7 @@ body {
     font-size: 14px;
   }
 }
-
+/* End of Banner Section */
 
 /* Plants Section */
 .plants-section {
@@ -239,8 +239,7 @@ body {
     padding: 10px;
   }
 }
-
-
+/* End of Plants Section */
 
 /* Flower and Plants lover */
 .intro-section {
@@ -308,6 +307,9 @@ body {
     word-break: break-word;
     white-space: normal;
   }
+  .intro-text h1 br {
+  display: none;
+}
 
   .intro-text span {
     display: inline;
@@ -322,10 +324,8 @@ body {
     display: none;
   }
 }
-
 /* End Flower & Plants Lover section */
 
-/* Deal Section */
 /* Deal Section */
 .deals-section {
   padding: 60px 40px;
@@ -346,14 +346,12 @@ body {
   color: #666;
 }
 
-/* Layout container for desktop */
 .deals-container {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
 
-/* Left side: Bloom & Ana */
 .left-side {
   display: flex;
   flex-direction: column;
@@ -366,7 +364,6 @@ body {
   height: 190px;
 }
 
-/* Right side: Zabo */
 .right-side {
   width: 60%;
   display: flex;
@@ -386,7 +383,6 @@ body {
   font-size: 18px;
 }
 
-/* Shared Deal Box Styling */
 .deal-box {
   position: relative;
   background-size: cover;
@@ -403,7 +399,6 @@ body {
   flex-direction: column;
 }
 
-/* Always-on dark overlay */
 .deal-box::before {
   content: '';
   position: absolute;
@@ -415,7 +410,6 @@ body {
   z-index: 1;
 }
 
-/* Heading inside box */
 .deal-box h3 {
   position: relative;
   z-index: 2;
@@ -423,7 +417,6 @@ body {
   margin: 10px 0;
 }
 
-/* Paragraph (Shop Now) inside box */
 .deal-box p {
   position: relative;
   z-index: 2;
@@ -434,7 +427,7 @@ body {
   color: white;
 }
 
-/* ✅ Mobile Responsive Section */
+/* Mobile Responsive Section */
 @media (max-width: 768px) {
   .deals-container {
     display: flex;
@@ -450,7 +443,7 @@ body {
 
   .deal-box {
     width: 100%;
-    height: 300px; /* fixed height */
+    aspect-ratio: 16 / 9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -465,11 +458,12 @@ body {
     color: #fff;
   }
 
+
   .deal-box::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
 
@@ -491,11 +485,7 @@ body {
     text-decoration: underline;
   }
 }
-
-
-
 /* Deal Section End */
-
 
 
 /* Subscribe Section */
@@ -549,18 +539,19 @@ body {
   width: 200px;
   margin: 0;
 }
-/* moblie Responsive */
+/* End of Section */
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .subscribe-section {
     position: relative;
-    padding: 40px 10px; /* More vertical space for taller banner */
+    padding: 40px 10px;
     text-align: center;
   }
 
   .subscribe-section .background-image {
     width: 100%;
-    height: 250px; /* Increased banner height */
+    height: 250px;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -589,7 +580,7 @@ body {
   .subscribe-section input[type="email"] {
     padding: 8px 10px;
     font-size: 14px;
-    width: 60%; /* Narrower input field */
+    width: 60%;
     max-width: 240px;
   }
 
@@ -600,10 +591,8 @@ body {
     white-space: nowrap;
   }
 }
+/* End of Subscribe Section */
 
-
-
-/* Footer Section */
 /* Footer Section */
 .site-footer {
   background-color: #f3f6fb;
@@ -619,7 +608,6 @@ body {
   gap: 45px;
 }
 
-/* Columns */
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -637,7 +625,6 @@ body {
   gap: 25px;
 }
 
-/* Split two lists inside list-group */
 .footer-list {
   list-style: none;
   padding: 0;
@@ -652,7 +639,6 @@ body {
   color: #666;
 }
 
-/* Logo and Heading */
 .footer-logo {
   width: 120px;
   margin-bottom: 10px;
@@ -664,7 +650,6 @@ body {
   color: #666;
 }
 
-/* Social */
 .social-column {
   flex: 1 1 150px;
 }
@@ -690,7 +675,7 @@ body {
   cursor: pointer;
 }
 
-/* ✅ Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
