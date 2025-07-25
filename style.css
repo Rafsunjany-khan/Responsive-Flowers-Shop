@@ -100,6 +100,38 @@ body {
     max-height: 400px;
 }
 
+/* Mobile Response Banner section */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .banner-image {
+    order: -1;
+    text-align: center;
+    width: 100%;
+  }
+
+  .banner-image img {
+    max-height: 280px;
+    width: 100%;
+  }
+
+  .banner-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+  }
+}
+
 
 /* Plants Section */
 .plants-section {
