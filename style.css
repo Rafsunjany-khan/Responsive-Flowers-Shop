@@ -284,8 +284,48 @@ body {
 .intro-text ul li {
   margin-bottom: 16px;
 }
+
+/* Mobile Responsible Flower & Plant Section */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .intro-image img {
+    width: 100%;
+  }
+
+  .intro-text {
+    padding-left: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .intro-text h1 {
+    font-size: 26px;
+    line-height: 1.3;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .intro-text span {
+    display: inline;
+  }
+
+  .intro-text ul {
+    font-size: 16px;
+    padding-left: 18px;
+  }
+
+  .intro-text .badge {
+    display: none;
+  }
+}
+
 /* End Flower & Plants Lover section */
 
+/* Deal Section */
 /* Deal Section */
 .deals-section {
   padding: 60px 40px;
@@ -306,43 +346,7 @@ body {
   color: #666;
 }
 
-.deals-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex: 1;
-  min-width: 280px;
-}
-
-/* Section Styles */
-.deals-section {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.deals-section h2 {
-  font-size: 36px;
-}
-
-.deals-section h2 span {
-  color: orange;
-}
-
-.deals-section p {
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: #555;
-}
-
-/* Layout container */
+/* Layout container for desktop */
 .deals-container {
   display: flex;
   justify-content: center;
@@ -357,10 +361,9 @@ body {
   width: 35%;
 }
 
-/* Bloom and Ana: Each takes 48% of height */
 .left-side .deal-box {
   flex: 1;
-  height: 190px; /* 48% of 400px approx */
+  height: 190px;
 }
 
 /* Right side: Zabo */
@@ -380,11 +383,10 @@ body {
 }
 
 .right-side .deal-box p {
-   font-size: 18px;
-
+  font-size: 18px;
 }
 
-/* Deal box shared styles */
+/* Shared Deal Box Styling */
 .deal-box {
   position: relative;
   background-size: cover;
@@ -397,7 +399,10 @@ body {
   color: white;
   padding: 20px;
   transition: transform 0.3s ease;
+  text-align: center;
+  flex-direction: column;
 }
+
 /* Always-on dark overlay */
 .deal-box::before {
   content: '';
@@ -408,20 +413,6 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
-
-/* Container Box */
-.deal-box {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Vertically center */
-  align-items: center;      /* Horizontally center */
-  text-align: center;
-  padding: 20px;
 }
 
 /* Heading inside box */
@@ -442,7 +433,70 @@ body {
   font-size: 14px;
   color: white;
 }
-/* End of Deal Section */
+
+/* ✅ Mobile Responsive Section */
+@media (max-width: 768px) {
+  .deals-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .left-side,
+  .right-side {
+    display: contents;
+  }
+
+  .deal-box {
+    width: 100%;
+    height: 300px; /* fixed height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+  }
+
+  .deal-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    z-index: 1;
+  }
+
+  .deal-box h3,
+  .deal-box p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  .deal-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .deal-box p {
+    font-size: 16px;
+    text-decoration: underline;
+  }
+}
+
+
+
+/* Deal Section End */
+
+
 
 /* Subscribe Section */
 .subscribe-section {
@@ -495,7 +549,61 @@ body {
   width: 200px;
   margin: 0;
 }
+/* moblie Responsive */
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .subscribe-section {
+    position: relative;
+    padding: 40px 10px; /* More vertical space for taller banner */
+    text-align: center;
+  }
 
+  .subscribe-section .background-image {
+    width: 100%;
+    height: 250px; /* Increased banner height */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .subscribe-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subscribe-section form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subscribe-section input[type="email"] {
+    padding: 8px 10px;
+    font-size: 14px;
+    width: 60%; /* Narrower input field */
+    max-width: 240px;
+  }
+
+  .subscribe-section button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+
+
+/* Footer Section */
 /* Footer Section */
 .site-footer {
   background-color: #f3f6fb;
@@ -511,46 +619,54 @@ body {
   gap: 45px;
 }
 
+/* Columns */
 .footer-column {
-  flex: 1 1 200px;
   display: flex;
   flex-direction: column;
   gap: 22px;
-
-}
-.list-column {
-  flex: 0 0 140px;
-  max-width: 140px;
 }
 
 .logo-column {
   flex: 1 1 250px;
 }
 
+.list-group {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 200px;
+  gap: 25px;
+}
+
+/* Split two lists inside list-group */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-list li {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Logo and Heading */
 .footer-logo {
-  max-height: 70px;
   width: 120px;
   margin-bottom: 10px;
 }
 
 .footer-heading {
-  font-size: 22px;
-  font-weight: 200;
-  color: #666;
-  margin-top: 10px;
-}
-
-.footer-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-list li {
-  margin-bottom: 22px;
   font-size: 18px;
+  font-weight: 300;
   color: #666;
+}
 
+/* Social */
+.social-column {
+  flex: 1 1 150px;
 }
 
 .footer-social {
@@ -565,13 +681,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .social-icon {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
   cursor: pointer;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-column,
+  .list-group {
+    width: 100%;
+  }
+
+  .list-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .footer-list {
+    width: 48%;
+    gap: 10px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .footer-list li {
+    font-size: 15px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
 }
